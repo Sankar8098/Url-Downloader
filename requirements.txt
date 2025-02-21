@@ -8,10 +8,10 @@ requests
 tgcrypto
 aiofiles
 dnspython
-motor[srv]
+motor==3.3.2  # MongoDB async driver
+pymongo==4.6.1  # MongoDB driver (motor depends on this)
 beautifulsoup4
 humanize
 Flask==2.2.2
 gunicorn==20.1.0
 aiohttp
-pymongo[srv]==3.12.3
