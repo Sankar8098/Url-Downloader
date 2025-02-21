@@ -31,7 +31,7 @@ async def help_user(bot, update):
         text=Translation.HELP_USER,
         parse_mode="html",
         disable_web_page_preview=True,
-        reply_to_message_id=update.message_id
+        reply_to_message_id=update.id  # Fixed: Use `update.id` instead of `update.message_id`
     )
 
 
@@ -53,5 +53,5 @@ async def start(bot, update):
                 [InlineKeyboardButton("About Master 👨‍⚖️", url="https://t.me/WebX_Divin")],
             ]
         ),
-        reply_to_message_id=update.message_id
+        reply_to_message_id=update.id  # Fixed: Use `update.id` instead of `update.message_id`
     )
